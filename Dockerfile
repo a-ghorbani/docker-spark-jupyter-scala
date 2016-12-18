@@ -28,7 +28,8 @@ RUN /opt/anaconda3/bin/jupyter toree install --interpreters=PySpark,SQL,Scala,Sp
 RUN /opt/anaconda3/bin/conda install vega --channel conda-forge -y
 RUN /opt/anaconda3/bin/conda install plotly -y
 
-RUN yum install npm -y
+RUN yum install -y epel-release
+RUN yum install -y npm
 RUN npm install -g bower
 RUN /opt/anaconda3/bin/pip install jupyter_declarativewidgets
 RUN /opt/anaconda3/bin/jupyter declarativewidgets quick-setup --sys-prefix
