@@ -1,4 +1,4 @@
-FROM aghorbani/spark-anaconda:2.0.2-3.4.2
+FROM aghorbani/spark-anaconda:2.0.2-3.4
 MAINTAINER Asghar Ghorbani gorbani59@gmail.com
 
 # Install Scala kernel for Jupyter 
@@ -36,12 +36,9 @@ RUN /opt/anaconda3/bin/jupyter declarativewidgets quick-setup --sys-prefix
 RUN /opt/anaconda3/bin/pip install jupyter_dashboards
 RUN /opt/anaconda3/bin/jupyter dashboards quick-setup --sys-prefix
 
-
-RUN mkdir jupyter_sample && cd jupyter_sample 
-# RUN download examples here
-
 VOLUME /notebooks
 WORKDIR /notebooks
 
 ADD jupyter_notebook.sh /etc/jupyter_notebook.sh
 CMD ["/etc/jupyter_notebook.sh"]
+
