@@ -1,6 +1,6 @@
 # Apache Spark + Anaconda + Scala kernel for Jupyter on Docker 
 
-This docker is based on [this](https://hub.docker.com/r/aghorbani/docker-spark-anaconda) spark 2 docker which uses Anacona3 as its Python interpreter. In this docker image additionally contains [jupyter-scala](https://github.com/alexarchambault/jupyter-scala), [Apache Toree](https://github.com/apache/incubator-toree) and some useful plogins like [declarativewidgets](https://github.com/jupyter-incubator/declarativewidgets), [jupyter_dashboards](https://github.com/jupyter-incubator/dashboards), [vega](https://github.com/vega/ipyvega) and [plotly](https://plot.ly/python/getting-started/).  
+This docker is based on [this](https://hub.docker.com/r/aghorbani/docker-spark-anaconda) spark 2 docker which uses Anacona3 as its Python interpreter. In this docker image additionally contains [jupyter-scala](https://github.com/alexarchambault/jupyter-scala), [Apache Toree](https://github.com/apache/incubator-toree) and some useful plugins like [declarativewidgets](https://github.com/jupyter-incubator/declarativewidgets), [jupyter_dashboards](https://github.com/jupyter-incubator/dashboards), [vega](https://github.com/vega/ipyvega) and [plotly](https://plot.ly/python/getting-started/).  
 
 ## Pull the image from Docker Repository
 
