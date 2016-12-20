@@ -37,6 +37,8 @@ RUN conda install vega --channel conda-forge -y && \
     jupyter dashboards quick-setup --sys-prefix && \
     conda clean -tipsy
 
+RUN conda install -c r r-essentials=1.5.0
+
 VOLUME /notebooks
 WORKDIR /notebooks
 
