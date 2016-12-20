@@ -14,8 +14,8 @@ RUN curl -L -o /usr/local/bin/coursier https://raw.githubusercontent.com/alexarc
 #     rm jdk-8u112-linux-x64.rpm
 
 # Install Toree 
-ADD toree-0.2.0.dev1.tar.gz ./ 
-RUN pip install toree-0.2.0.dev1.tar.gz && \
+COPY toree-0.2.0.dev1.tar.gz .
+RUN pip install toree-0.2.0.dev1.tar.gz  && \
     rm toree-0.2.0.dev1.tar.gz && \
     jupyter toree install --ToreeInstall.prefix=$CONDA_DIR --interpreters=PySpark,SQL,Scala,SparkR 
 
