@@ -8,10 +8,10 @@ RUN curl -L -o /usr/local/bin/coursier https://raw.githubusercontent.com/alexarc
     chmod +x jupyter-scala && \
     ./jupyter-scala
 
-# # Install Java 8u112 
-# RUN curl -LO "http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jdk-8u112-linux-x64.rpm" -H 'Cookie: oraclelicense=accept-securebackup-cookie' && \
-#     rpm -i jdk-8u112-linux-x64.rpm && \
-#     rm jdk-8u112-linux-x64.rpm
+# Install Java 8u112 
+RUN curl -LO "http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jdk-8u112-linux-x64.rpm" -H 'Cookie: oraclelicense=accept-securebackup-cookie' && \
+    rpm -i jdk-8u112-linux-x64.rpm && \
+    rm jdk-8u112-linux-x64.rpm
 
 # Install Toree 
 COPY toree-0.2.0.dev1.tar.gz .
