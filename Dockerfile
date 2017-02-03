@@ -1,4 +1,4 @@
-FROM aghorbani/spark-miniconda:2.0.2-3.4
+FROM aghorbani/spark-miniconda:2.1.0-3.4
 MAINTAINER Asghar Ghorbani [https://de.linkedin.com/in/aghorbani]
 
 # Install Scala kernel for Jupyter 
